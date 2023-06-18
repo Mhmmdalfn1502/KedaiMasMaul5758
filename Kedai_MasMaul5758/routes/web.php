@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use ConsoleTVs\Charts\Facades\Charts;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,25 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Route::get('/chart', function () {
+//     $chart = Charts::create('bar', 'highcharts')
+//         ->title('Contoh Grafik Bar')
+//         ->elementLabel('Jumlah')
+//         ->labels(['Jan', 'Feb', 'Mar'])
+//         ->values([10, 25, 15]);
+
+//     return view('chart', ['chart' => $chart]);
+// });
+
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('User.dashbord');
+});
+
+Route::get('/dashbord', function () {
+    return view('dashbord');
+});
+
+Route::get('/about', function () {
+    return view('User.about');
 });
