@@ -1,0 +1,19 @@
+.kotak {
+    width: 262px;
+    height: 172px;
+    background-color: #F5D247;
+    border-radius: 10px;
+}
+
+.kotak2 {
+    width: 367px;
+    height: 299px;
+    background-color: #F5D247;
+    padding: 25px;
+}
+
+.opsi {
+    width: 367px;
+    height: 48px;
+    background-color: #F5D247;
+}
