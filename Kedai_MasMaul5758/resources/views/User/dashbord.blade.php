@@ -1,6 +1,8 @@
 @extends('main')
 
 @section('content')
+    {{-- carousel  --}}
+
     <section>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-top: 3%">
             <div class="carousel-inner" id="1">
@@ -73,6 +75,10 @@
 
     </section>
 
+    {{-- END CAROUSEL  --}}
+
+    {{-- START ABOUTUS  --}}
+
     <section>
         <div class="menu" style="margin-top:10%;">
             <h1 class="text-center fw-bold ">MENU FAVORIT</h1>
@@ -136,8 +142,12 @@
         </div>
     </section>
 
+    {{-- END ABOUTUS  --}}
+
+    {{-- START MENU  --}}
+
     <section>
-        <div class="col align-items-center" style="margin-top: 10%">
+        <div class="col align-items-center" style="margin-top: 10%; padding:5%">
             <div class="tagline text-center">
                 <h1>MENU</h1>
                 <div class="option flex-row w-200" style="margin-top: 5%">
@@ -250,6 +260,10 @@
 
     </section>
 
+    {{-- END MENU  --}}
+
+    {{-- START OUTLETS  --}}
+
     <section>
         <div class="tagline text-center" style="margin-top:10%">
             <h1>OUTLETS</h1>
@@ -285,50 +299,73 @@
 
     </section>
 
-    <section>
-        <div class="container" style="margin-top: 10%; margin-bottom:10%">
-            <h1 class="text-center">ULASAN</h1>
+    {{-- END OUTLETS  --}}
 
-            <div class="row justify-content-evenly">
-                <div class="review col-12 col-sm-6 col-md-12 shadow p-3 mb-5 bg-body-tertiary rounded"
-                    style="margin-top: 5%; padding:5px; border-radius:10px; width:500px; height:auto">
-                    <div class="col">
-                        <img src="../assets/siyap.jpeg" alt=""
-                            style="width: 10%; height:auto; border-radius:100%">
-                        <div class="row">
-                            <span><b>Muhammad Alfan</b></span>
-                            <span style="color:grey">alfan@gmail.com</span>
+    {{-- START REVIEW  --}}
+
+    <section>
+        <div class="container my-3">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>ULASAN</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-5 mb-4 mx-4 border shadow py-2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 me-3">
+                            <img src="/assets/patrick.svg">
+                        </div>
+                        <div class="col-md-8">
+                            <span class="fw-bold">Matthew</span> <br>
+                            <span class="text-secondary">matew@gmail.com</span>
+                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
                         </div>
                     </div>
                 </div>
-                <div class="review col-12 col-sm-6 col-md-12 shadow p-3 mb-5 bg-body-tertiary rounded"
-                    style="margin-top: 5%; padding:5px; border-radius:10px; width:500px; height:auto">
-                    <img src="../assets/siyap.jpeg" alt="" style="width: 50px; height: 50px; border-radius:100%">
-                    <div class="row">
-                        <span><b>Muhammad Alfan</b></span><br>
-                        <span style="color:grey">alfan@gmail.com</span>
+                <div class="col-md-5 mb-4 mx-4 border shadow p-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 me-3">
+                            <img src="/assets/2.svg">
+                        </div>
+                        <div class="col-md-8">
+                            <span class="fw-bold">Matthew</span> <br>
+                            <span class="text-secondary">matew@gmail.com</span>
+                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
+                        </div>
                     </div>
                 </div>
-                <div class="review col-12 col-sm-6 col-md-12 shadow p-3 mb-5 bg-body-tertiary rounded"
-                    style="margin-top: 5%; padding:5px; border-radius:10px; width:500px; height:auto">
-                    <img src="../assets/siyap.jpeg" alt="" style="width: 50px; height: 50px; border-radius:100%">
-                    <div class="row">
-                        <span><b>Muhammad Alfan</b></span><br>
-                        <span style="color:grey">alfan@gmail.com</span>
+                <div class="col-md-5 mb-4 mx-4 border shadow p-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 me-3">
+                            <img src="/assets/3.svg">
+                        </div>
+                        <div class="col-md-8">
+                            <span class="fw-bold">Matthew</span> <br>
+                            <span class="text-secondary">matew@gmail.com</span>
+                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
+                        </div>
                     </div>
                 </div>
-                <div class="review col-12 col-sm-6 col-md-12 shadow p-3 mb-5 bg-body-tertiary rounded"
-                    style="margin-top: 5%; padding:5px; border-radius:10px; width:500px; height:auto">
-                    <img src="../assets/siyap.jpeg" alt="" style="width: 50px; height: 50px; border-radius:100%">
-                    <div class="row">
-                        <span><b>Muhammad Alfan</b></span><br>
-                        <span style="color:grey">alfan@gmail.com</span>
+                <div class="col-md-5 mb-4 mx-4 border shadow p-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-2 me-3">
+                            <img src="/assets/4.svg">
+                        </div>
+                        <div class="col-md-8">
+                            <span class="fw-bold">Matthew</span> <br>
+                            <span class="text-secondary">matew@gmail.com</span>
+                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
+
+    {{-- END REVIEW  --}}
+
+    {{-- START CONTACT US  --}}
 
     <section>
 
@@ -340,11 +377,11 @@
                 <div class="form">
                     <form action="/submit" method="POST">
                         <input type="text" id="nama" name="nama" placeholder="Nama"
-                            style="width: 50%; margin-top:2%; border-radius:5px; padding:5px"><br>
+                            style="width: 70%; margin-top:2%; border-radius:5px; padding:10px"><br>
                         <input type="text" id="email" name="email" placeholder="Email"
-                            style="width: 50%; margin-top:2%; border-radius:5px; padding:5px"><br>
+                            style="width: 70%; margin-top:2%; border-radius:5px; padding:10px"><br>
                         <input type="text" id="pesan" name="pesan" placeholder="pesan"
-                            style="width: 50%; height:300px; margin-top:2%; border-radius:5px; padding:5px"><br>
+                            style="width: 70%; height:300px; margin-top:2%; border-radius:5px; padding:10px"><br>
                         <button type="submit" class="btn btn-warning"
                             style="margin-top:10px; justify-content:flex-start">Submit</button>
                     </form>
@@ -352,4 +389,6 @@
             </div>
         </div>
     </section>
+
+    {{-- END CONTACT US  --}}
 @endsection

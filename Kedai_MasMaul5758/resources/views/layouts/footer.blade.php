@@ -1,9 +1,16 @@
 <footer style="margin-top: 10%">
-    <div class="container bg-warning">
+    <div class="container-fluid bg-warning" style="padding:2%">
         <div class="row">
             <div class="col-md-6">
-                <h3>Tentang Kami</h3>
-                <p>Kedai MasMaul5758 merupakan sebuah usaha UMKM yang bergerak dalam bidang food and beverage (F&B)</p>
+                <div class="row">
+                    <img src={{ '../assets/Kedai.png' }} alt="" style="width: 20% ;height:auto">
+                    <div class="col">
+                        <h3>Tentang Kami</h3>
+                        <p>Kedai MasMaul5758 merupakan sebuah usaha UMKM yang bergerak dalam bidang food and beverage
+                            (F&B)
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3">
                 <h3>Tautan</h3>

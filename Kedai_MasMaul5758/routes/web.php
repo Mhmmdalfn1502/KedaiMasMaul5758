@@ -31,6 +31,6 @@ Route::get('/dashbord', function () {
     return view('dashbord');
 });
 
-Route::get('/about', function () {
-    return view('User.about');
+Route::get('/login', function () {
+    return view('User.login');
 });
