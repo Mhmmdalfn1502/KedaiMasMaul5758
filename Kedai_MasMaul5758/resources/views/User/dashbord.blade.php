@@ -1,13 +1,21 @@
 @extends('main')
 
 @section('content')
+    <title>Dashboard</title>
+
+    <style>
+        section {
+            margin-top: 50px;
+            margin-bottom: 80px
+        }
+    </style>
     {{-- carousel  --}}
 
     <section>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-top: 3%">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" id="1">
                 <div class="carousel-item active" style="height: 452px">
-                    <img src={{ '../assets/slide1.jpg' }} class="d-inline-block w-100" alt="...">
+                    <img src={{ '../assets/Frame1.png' }} class="d-inline-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" style="height: 452px">
                     <img src={{ '../assets/slide2.jpg' }} class="d-block w-100" alt="...">
@@ -30,11 +38,10 @@
     </section>
 
     <section>
-        <div class="container overflow-hidden" style="margin-top: 10%; justify-content:space-between">
-            <div class="row
-            gx-5">
+        <div class="container overflow-hidden" style="justify-content:space-between">
+            <div class="row gx-5">
                 <div class="col-12 col-sm-6 col-md-6">
-                    <div class="p-3">
+                    <div class="">
                         <h1 id="2" class="fw-bold">TENTANG KAMI</h1>
                         <p>Kedai Mas Maul 5758 atau yang sering di kenal warung
                             kuning /arb adalah sebuah usaha UMKM yang
@@ -57,16 +64,20 @@
                             bincang, pemilik ruko tersebut sepakat untuk disewa
                             selama satu tahun ke depan. Dari situlah Mas Maul
                             mendirikan kedai tersebut</p>
+                        <p>Sebelum menetap di kampus IBIK atau RanggaGading,
+                            Mas Maul sempat mencari tempat di Lawang Seketeng,
+                            Jalan Juanda, hingga Bubulak. Namun, tidak
+                            menemukan tempat yang strategis. Saat berkunjung ke
+                            IBIK, Mas Maul melihat ruko kosong yang menarik
+                            perhatiannya. Setelah itu, Mas Maul menghubungi
+                            pemilik ruko kosong tersebut dan setelah berbincang-
+                            bincang, pemilik ruko tersebut sepakat untuk disewa
+                            selama satu tahun ke depan. Dari situlah Mas Maul
+                            mendirikan kedai tersebut</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm6 col-md-6">
-                    <div class="p-3">
-                        <div class="col d-flex justify-content-end">
-                            <img src="../assets/MasMaul.jpeg" alt="" class="pp"
-                                style="width: 100%; height: 100%;">
-
-                        </div>
-                    </div>
+                <div class="col-12 col-sm-6 col-md-6 ">
+                    <img src="../assets/Kedai.png" alt="" class="pp" style="width: 100%; height: 100%;">
                 </div>
             </div>
         </div>
@@ -80,7 +91,7 @@
     {{-- START ABOUTUS  --}}
 
     <section>
-        <div class="menu" style="margin-top:10%;">
+        <div class="menu">
             <h1 class="text-center fw-bold ">MENU FAVORIT</h1>
             <P class="text-center">Ini adalah menu favorit yang tersedia di kedai kami dan sangat disukai <br>
                 oleh para pelanggan kami.</P>
@@ -147,7 +158,7 @@
     {{-- START MENU  --}}
 
     <section>
-        <div class="col align-items-center" style="margin-top: 10%; padding:5%">
+        <div class="col text-center px-5">
             <div class="tagline text-center">
                 <h1>MENU</h1>
                 <div class="option flex-row w-200" style="margin-top: 5%">
@@ -264,36 +275,34 @@
 
     {{-- START OUTLETS  --}}
 
-    <section>
-        <div class="tagline text-center" style="margin-top:10%">
-            <h1>OUTLETS</h1>
-            <div class="row justify-content-evenly" style="margin-top: 5%">
-                <div class="col-12 col-sm-4 text-start">
-                    <div class="map bg-warning" style="width: 350px; height:350px">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.70798722468325!2d106.7995262908822!3d-6.606127272579998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5ead182a877%3A0x5dcfd17734a4820f!2sKedai%20Mas%20Maul%205758!5e0!3m2!1sid!2sid!4v1686984550541!5m2!1sid!2sid"
-                            width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <h6 style="margin-top: 20px"><b>KEDAI MAS MAUL 5758</b></h6>
-                    <p>Jl. Rangga Gading, RT.01/RW.08,
-                        Gudang, Kota Bogor, Jawa Barat</p>
-                    <p><b>Open at 08.00 - 10.00</b></p>
-                    <p><b>08xxxxxxxxxxx</b></p>
+    <section class="container p-5">
+        <h1 class="text-center">OUTLETS</h1>
+        <div class="row justify-content-evenly" style="margin-top: 5%">
+            <div class="col-12 col-sm-4 text-start">
+                <div class="map bg-warning" style="width: 350px; height:350px">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.70798722468325!2d106.7995262908822!3d-6.606127272579998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5ead182a877%3A0x5dcfd17734a4820f!2sKedai%20Mas%20Maul%205758!5e0!3m2!1sid!2sid!4v1686984550541!5m2!1sid!2sid"
+                        width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="col-12 col-sm-4 text-start">
-                    <div class="map bg-warning" style="width: 350px; height:350px">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.70798722468325!2d106.7995262908822!3d-6.606127272579998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5ead182a877%3A0x5dcfd17734a4820f!2sKedai%20Mas%20Maul%205758!5e0!3m2!1sid!2sid!4v1686984550541!5m2!1sid!2sid"
-                            width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <h6 style="margin-top: 20px"><b>KEDAI MAS MAUL 5758</b></h6>
-                    <p>Jl. Rangga Gading, RT.01/RW.08,
-                        Gudang, Kota Bogor, Jawa Barat</p>
-                    <p><b>Open at 08.00 - 10.00</b></p>
-                    <p><b>08xxxxxxxxxxx</b></p>
+                <h6 style="margin-top: 20px"><b>KEDAI MAS MAUL 5758</b></h6>
+                <p>Jl. Rangga Gading, RT.01/RW.08,
+                    Gudang, Kota Bogor, Jawa Barat</p>
+                <p><b>Open at 08.00 - 10.00</b></p>
+                <p><b>08xxxxxxxxxxx</b></p>
+            </div>
+            <div class="col-12 col-sm-4 text-start">
+                <div class="map bg-warning" style="width: 350px; height:350px">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.70798722468325!2d106.7995262908822!3d-6.606127272579998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5ead182a877%3A0x5dcfd17734a4820f!2sKedai%20Mas%20Maul%205758!5e0!3m2!1sid!2sid!4v1686984550541!5m2!1sid!2sid"
+                        width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+                <h6 style="margin-top: 20px"><b>KEDAI MAS MAUL 5758</b></h6>
+                <p>Jl. Rangga Gading, RT.01/RW.08,
+                    Gudang, Kota Bogor, Jawa Barat</p>
+                <p><b>Open at 08.00 - 10.00</b></p>
+                <p><b>08xxxxxxxxxxx</b></p>
             </div>
         </div>
 
@@ -304,61 +313,18 @@
     {{-- START REVIEW  --}}
 
     <section>
-        <div class="container my-3">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h1>ULASAN</h1>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-3">
-                <div class="col-md-5 mb-4 mx-4 border shadow py-2">
-                    <div class="row justify-content-center">
-                        <div class="col-md-2 me-3">
-                            <img src="/assets/patrick.svg">
-                        </div>
-                        <div class="col-md-8">
-                            <span class="fw-bold">Matthew</span> <br>
-                            <span class="text-secondary">matew@gmail.com</span>
-                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
+        <div class="" style=justify-content:space-between">
+            <h1 class="text-center">ULASAN</h1>
+            <div class="row justify-content-center" style="margin-top: 5%">
+                @foreach ($feedbacks as $feedback)
+                    <div class="col-12 col-md-5 col-sm-12 mb-4 mx-4 border shadow py-2">
+                        <div class="row justify-content-center" style="padding: 5px">
+                            <span class="fw-bold">{{ $feedback->nama }}</span> <br>
+                            <span class="text-secondary">{{ $feedback->email }}</span>
+                            <p>{{ $feedback->pesan }}</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5 mb-4 mx-4 border shadow p-4">
-                    <div class="row justify-content-center">
-                        <div class="col-md-2 me-3">
-                            <img src="/assets/2.svg">
-                        </div>
-                        <div class="col-md-8">
-                            <span class="fw-bold">Matthew</span> <br>
-                            <span class="text-secondary">matew@gmail.com</span>
-                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 mb-4 mx-4 border shadow p-4">
-                    <div class="row justify-content-center">
-                        <div class="col-md-2 me-3">
-                            <img src="/assets/3.svg">
-                        </div>
-                        <div class="col-md-8">
-                            <span class="fw-bold">Matthew</span> <br>
-                            <span class="text-secondary">matew@gmail.com</span>
-                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 mb-4 mx-4 border shadow p-4">
-                    <div class="row justify-content-center">
-                        <div class="col-md-2 me-3">
-                            <img src="/assets/4.svg">
-                        </div>
-                        <div class="col-md-8">
-                            <span class="fw-bold">Matthew</span> <br>
-                            <span class="text-secondary">matew@gmail.com</span>
-                            <p>Sukakk tenan banget enakk uwaww kentangnya joss</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -368,20 +334,20 @@
     {{-- START CONTACT US  --}}
 
     <section>
-
         <div class="container">
-            <div class="text-center" style="margin-top: 10%">
+            <div class="text-center">
                 <h1>HUBUNGI KAMI</h1>
                 <p style="margin-top: 2%">Halo pelanggan Setia Kedai Mas Maul 5758, jika ada kritik, <br>
                     keluhan, saran, atau pertanyaan ? hubungi kami melalui form dibawah ini</p>
                 <div class="form">
-                    <form action="/submit" method="POST">
+                    <form action="/dashbord" method="POST">
+                        @csrf
                         <input type="text" id="nama" name="nama" placeholder="Nama"
                             style="width: 70%; margin-top:2%; border-radius:5px; padding:10px"><br>
-                        <input type="text" id="email" name="email" placeholder="Email"
+                        <input type="email" id="email" name="email" placeholder="Email"
                             style="width: 70%; margin-top:2%; border-radius:5px; padding:10px"><br>
-                        <input type="text" id="pesan" name="pesan" placeholder="pesan"
-                            style="width: 70%; height:300px; margin-top:2%; border-radius:5px; padding:10px"><br>
+                        <textarea type="text" id="pesan" name="pesan" placeholder="pesan"
+                            style="width: 70%; height:300px; margin-top:2%; border-radius:5px; padding:10px"></textarea><br>
                         <button type="submit" class="btn btn-warning"
                             style="margin-top:10px; justify-content:flex-start">Submit</button>
                     </form>

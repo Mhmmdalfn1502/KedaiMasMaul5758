@@ -10,13 +10,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" type="text/css" href="css/Homepage.css">
-    <title>Document</title>
 </head>
 
-<body>
+<style>
+    .body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+</style>
+
+<body class="container-fluid">
     @include('layouts.nav')
-    <div class="container" style="min-height: 800px">
+    <div class="container-fluid">
         @yield('content')
     </div>
     @include('layouts.footer')
